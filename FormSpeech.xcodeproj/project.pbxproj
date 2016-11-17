@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF1084C81DDC6F1200A341F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1084C71DDC6F1200A341F9 /* AppDelegate.swift */; };
+		FF1084CA1DDC6F1200A341F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1084C91DDC6F1200A341F9 /* ViewController.swift */; };
+		FF1084CD1DDC6F1200A341F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1084CB1DDC6F1200A341F9 /* Main.storyboard */; };
+		FF1084CF1DDC6F1200A341F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1084CE1DDC6F1200A341F9 /* Assets.xcassets */; };
+		FF1084D21DDC6F1200A341F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1084D01DDC6F1200A341F9 /* LaunchScreen.storyboard */; };
+		FF1084DD1DDC6F1200A341F9 /* FormSpeechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1084DC1DDC6F1200A341F9 /* FormSpeechTests.swift */; };
+		FF1084E81DDC8B4000A341F9 /* FormSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1084E71DDC8B4000A341F9 /* FormSpeech.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF1084D91DDC6F1200A341F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1084BC1DDC6F1200A341F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1084C31DDC6F1200A341F9;
+			remoteInfo = FormSpeech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF1084C41DDC6F1200A341F9 /* FormSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormSpeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1084C71DDC6F1200A341F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF1084C91DDC6F1200A341F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF1084CC1DDC6F1200A341F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF1084CE1DDC6F1200A341F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF1084D11DDC6F1200A341F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF1084D31DDC6F1200A341F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1084D81DDC6F1200A341F9 /* FormSpeechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormSpeechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1084DC1DDC6F1200A341F9 /* FormSpeechTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSpeechTests.swift; sourceTree = "<group>"; };
+		FF1084DE1DDC6F1200A341F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1084E71DDC8B4000A341F9 /* FormSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSpeech.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1084C11DDC6F1200A341F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1084D51DDC6F1200A341F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF1084BB1DDC6F1200A341F9 = {
+			isa = PBXGroup;
+			children = (
+				FF1084C61DDC6F1200A341F9 /* FormSpeech */,
+				FF1084DB1DDC6F1200A341F9 /* FormSpeechTests */,
+				FF1084C51DDC6F1200A341F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1084C51DDC6F1200A341F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1084C41DDC6F1200A341F9 /* FormSpeech.app */,
+				FF1084D81DDC6F1200A341F9 /* FormSpeechTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1084C61DDC6F1200A341F9 /* FormSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				FF1084C71DDC6F1200A341F9 /* AppDelegate.swift */,
+				FF1084C91DDC6F1200A341F9 /* ViewController.swift */,
+				FF1084CB1DDC6F1200A341F9 /* Main.storyboard */,
+				FF1084CE1DDC6F1200A341F9 /* Assets.xcassets */,
+				FF1084D01DDC6F1200A341F9 /* LaunchScreen.storyboard */,
+				FF1084D31DDC6F1200A341F9 /* Info.plist */,
+				FF1084E71DDC8B4000A341F9 /* FormSpeech.swift */,
+			);
+			path = FormSpeech;
+			sourceTree = "<group>";
+		};
+		FF1084DB1DDC6F1200A341F9 /* FormSpeechTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1084DC1DDC6F1200A341F9 /* FormSpeechTests.swift */,
+				FF1084DE1DDC6F1200A341F9 /* Info.plist */,
+			);
+			path = FormSpeechTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1084C31DDC6F1200A341F9 /* FormSpeech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1084E11DDC6F1200A341F9 /* Build configuration list for PBXNativeTarget "FormSpeech" */;
+			buildPhases = (
+				FF1084C01DDC6F1200A341F9 /* Sources */,
+				FF1084C11DDC6F1200A341F9 /* Frameworks */,
+				FF1084C21DDC6F1200A341F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormSpeech;
+			productName = FormSpeech;
+			productReference = FF1084C41DDC6F1200A341F9 /* FormSpeech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF1084D71DDC6F1200A341F9 /* FormSpeechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1084E41DDC6F1200A341F9 /* Build configuration list for PBXNativeTarget "FormSpeechTests" */;
+			buildPhases = (
+				FF1084D41DDC6F1200A341F9 /* Sources */,
+				FF1084D51DDC6F1200A341F9 /* Frameworks */,
+				FF1084D61DDC6F1200A341F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1084DA1DDC6F1200A341F9 /* PBXTargetDependency */,
+			);
+			name = FormSpeechTests;
+			productName = FormSpeechTests;
+			productReference = FF1084D81DDC6F1200A341F9 /* FormSpeechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1084BC1DDC6F1200A341F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Erk Ekin";
+				TargetAttributes = {
+					FF1084C31DDC6F1200A341F9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7RAPBTX45S;
+						ProvisioningStyle = Automatic;
+					};
+					FF1084D71DDC6F1200A341F9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7RAPBTX45S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF1084C31DDC6F1200A341F9;
+					};
+				};
+			};
+			buildConfigurationList = FF1084BF1DDC6F1200A341F9 /* Build configuration list for PBXProject "FormSpeech" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1084BB1DDC6F1200A341F9;
+			productRefGroup = FF1084C51DDC6F1200A341F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1084C31DDC6F1200A341F9 /* FormSpeech */,
+				FF1084D71DDC6F1200A341F9 /* FormSpeechTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1084C21DDC6F1200A341F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1084D21DDC6F1200A341F9 /* LaunchScreen.storyboard in Resources */,
+				FF1084CF1DDC6F1200A341F9 /* Assets.xcassets in Resources */,
+				FF1084CD1DDC6F1200A341F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1084D61DDC6F1200A341F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1084C01DDC6F1200A341F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1084CA1DDC6F1200A341F9 /* ViewController.swift in Sources */,
+				FF1084C81DDC6F1200A341F9 /* AppDelegate.swift in Sources */,
+				FF1084E81DDC8B4000A341F9 /* FormSpeech.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1084D41DDC6F1200A341F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1084DD1DDC6F1200A341F9 /* FormSpeechTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF1084DA1DDC6F1200A341F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1084C31DDC6F1200A341F9 /* FormSpeech */;
+			targetProxy = FF1084D91DDC6F1200A341F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF1084CB1DDC6F1200A341F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1084CC1DDC6F1200A341F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF1084D01DDC6F1200A341F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1084D11DDC6F1200A341F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF1084DF1DDC6F1200A341F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF1084E01DDC6F1200A341F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1084E21DDC6F1200A341F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7RAPBTX45S;
+				INFOPLIST_FILE = FormSpeech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkekin.FormSpeech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF1084E31DDC6F1200A341F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7RAPBTX45S;
+				INFOPLIST_FILE = FormSpeech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkekin.FormSpeech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FF1084E51DDC6F1200A341F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7RAPBTX45S;
+				INFOPLIST_FILE = FormSpeechTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkekin.FormSpeechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FormSpeech.app/FormSpeech";
+			};
+			name = Debug;
+		};
+		FF1084E61DDC6F1200A341F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7RAPBTX45S;
+				INFOPLIST_FILE = FormSpeechTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkekin.FormSpeechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FormSpeech.app/FormSpeech";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1084BF1DDC6F1200A341F9 /* Build configuration list for PBXProject "FormSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1084DF1DDC6F1200A341F9 /* Debug */,
+				FF1084E01DDC6F1200A341F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1084E11DDC6F1200A341F9 /* Build configuration list for PBXNativeTarget "FormSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1084E21DDC6F1200A341F9 /* Debug */,
+				FF1084E31DDC6F1200A341F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1084E41DDC6F1200A341F9 /* Build configuration list for PBXNativeTarget "FormSpeechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1084E51DDC6F1200A341F9 /* Debug */,
+				FF1084E61DDC6F1200A341F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1084BC1DDC6F1200A341F9 /* Project object */;
+}
