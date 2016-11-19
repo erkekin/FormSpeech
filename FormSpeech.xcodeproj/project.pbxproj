@@ -14,6 +14,7 @@
 		FF1084D21DDC6F1200A341F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1084D01DDC6F1200A341F9 /* LaunchScreen.storyboard */; };
 		FF1084DD1DDC6F1200A341F9 /* FormSpeechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1084DC1DDC6F1200A341F9 /* FormSpeechTests.swift */; };
 		FF1084E81DDC8B4000A341F9 /* FormSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1084E71DDC8B4000A341F9 /* FormSpeech.swift */; };
+		FF8CD3141DE09DCA007377DE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FF8CD3131DE09DCA007377DE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		FF1084DC1DDC6F1200A341F9 /* FormSpeechTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSpeechTests.swift; sourceTree = "<group>"; };
 		FF1084DE1DDC6F1200A341F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF1084E71DDC8B4000A341F9 /* FormSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSpeech.swift; sourceTree = "<group>"; };
+		FF8CD3131DE09DCA007377DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		FF1084C61DDC6F1200A341F9 /* FormSpeech */ = {
 			isa = PBXGroup;
 			children = (
+				FF8CD3131DE09DCA007377DE /* README.md */,
 				FF1084C71DDC6F1200A341F9 /* AppDelegate.swift */,
 				FF1084C91DDC6F1200A341F9 /* ViewController.swift */,
 				FF1084CB1DDC6F1200A341F9 /* Main.storyboard */,
@@ -206,6 +209,7 @@
 			files = (
 				FF1084CA1DDC6F1200A341F9 /* ViewController.swift in Sources */,
 				FF1084C81DDC6F1200A341F9 /* AppDelegate.swift in Sources */,
+				FF8CD3141DE09DCA007377DE /* README.md in Sources */,
 				FF1084E81DDC8B4000A341F9 /* FormSpeech.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
