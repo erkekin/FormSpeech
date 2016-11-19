@@ -11,6 +11,56 @@ import Foundation
 typealias Pair = [Field:String]
 protocol Iteratable {}
 
+protocol ParserDelegate {
+    
+    func valueParsed(parser: Parser, forValue:String, andKey:Field)
+    
+}
+
+class Parser {
+    
+    var delegate:ParserDelegate?
+    
+    let words = Field.rawValues()
+    var iteration = 0
+    var text = ""{
+        
+        didSet{
+            
+            let secondIndex = iteration + 1
+            if secondIndex == words.count {
+                return
+            }
+            
+            let secondWord:String? = secondIndex == words.count ? nil: words[secondIndex]
+            let first = words[iteration]
+            let second = secondWord
+            print(first)
+            
+            if let sec = second {
+                print(sec)
+            }else{
+                print("nil")
+            }
+            
+            if let value = text.getSubstring(substring1: first, substring2: second),
+                
+                let key = Field(rawValue: first){
+                let value = value.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
+                print("FOUND: " + key.rawValue + ": " + value)
+                iteration += 1
+                delegate?.valueParsed(parser: self, forValue: value, andKey: key)
+                
+            }else {
+                
+            }
+            
+        }
+    }
+    
+}
+
+
 extension RawRepresentable where Self: RawRepresentable {
     
     static func iterateEnum<T: Hashable>(_: T.Type) -> AnyIterator<T> {
@@ -39,7 +89,7 @@ extension Iteratable where Self: RawRepresentable, Self: Hashable {
 
 extension String{
     
-    private func getSubstring(substring1: String, substring2:String?) -> String?{
+    func getSubstring(substring1: String, substring2:String?) -> String?{
         
         guard let range1 = self.range(of: substring1) else{return nil}
         

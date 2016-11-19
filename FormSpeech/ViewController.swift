@@ -13,7 +13,7 @@ enum Field: String, Iteratable{
     
     case name = "My name is"
     case surname = "my surname is"
-    case birthPlace = "I was born in"
+    case birthPlace = "I live in"
     case phoneNumber = "my number is"
     
 }
@@ -27,9 +27,8 @@ class Form{
     
     init?(text:String) {
         
-        print(text)
         if let output = text.parse(){
-            print(output)
+            
             name = output[Field.name]
             surname = output[Field.surname]
             birthPlace = output[Field.birthPlace]
@@ -41,7 +40,7 @@ class Form{
     
 }
 
-class ViewController: UIViewController,SFSpeechRecognizerDelegate {
+class ViewController: UIViewController, SFSpeechRecognizerDelegate, ParserDelegate{
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var surname: UITextField!
@@ -90,6 +89,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
     }
     private func startRecording() throws {
         
+        let parser = Parser()
+        parser.delegate = self
         // Cancel the previous task if it's running.
         if let recognitionTask = recognitionTask {
             recognitionTask.cancel()
@@ -113,12 +114,14 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         // We keep a reference to the task so that it can be cancelled.
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
             var isFinal = false
-            print(result)
+            
             if let result = result {
+                parser.text = result.bestTranscription.formattedString
                 
                 isFinal = result.isFinal
                 if(isFinal == true){
                     self.parseSpeech(speechText: result.bestTranscription.formattedString)
+                    
                     
                 }
             }
@@ -187,6 +190,28 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         surname.text = form.surname
         birthPlace.text = form.birthPlace
         phoneNumber.text = form.phoneNumber
+        
+    }
+    
+    func valueParsed(parser: Parser, forValue: String, andKey: Field) {
+        
+        switch andKey{
+            
+        case .name:
+            name.text = forValue
+            break
+            
+        case .surname:
+            surname.text = forValue
+            break
+        case .birthPlace:
+            birthPlace.text = forValue
+            break
+        case .phoneNumber:
+            phoneNumber.text = forValue
+            break
+            
+        }
         
     }
     
