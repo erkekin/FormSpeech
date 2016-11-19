@@ -193,22 +193,21 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, ParserDelega
         
     }
     
-    func valueParsed(parser: Parser, forValue: String, andKey: Field) {
+    func valueParsed(parser: Parser, forValue value: String, andKey key: Field) {
         
-        switch andKey{
+        switch key{
             
         case .name:
-            name.text = forValue
+            name.text = value
             break
-            
         case .surname:
-            surname.text = forValue
+            surname.text = value
             break
         case .birthPlace:
-            birthPlace.text = forValue
+            birthPlace.text = value
             break
         case .phoneNumber:
-            phoneNumber.text = forValue
+            phoneNumber.text = value
             break
             
         }

@@ -13,7 +13,7 @@ protocol Iteratable {}
 
 protocol ParserDelegate {
     
-    func valueParsed(parser: Parser, forValue:String, andKey:Field)
+    func valueParsed(parser: Parser, forValue value:String, andKey key:Field)
     
 }
 
@@ -28,27 +28,17 @@ class Parser {
         didSet{
             
             let secondIndex = iteration + 1
-            if secondIndex == words.count {
-                return
-            }
-            
+          
             let secondWord:String? = secondIndex == words.count ? nil: words[secondIndex]
             let first = words[iteration]
             let second = secondWord
-            print(first)
-            
-            if let sec = second {
-                print(sec)
-            }else{
-                print("nil")
-            }
-            
+     
             if let value = text.getSubstring(substring1: first, substring2: second),
                 
                 let key = Field(rawValue: first){
                 let value = value.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
                 print("FOUND: " + key.rawValue + ": " + value)
-                iteration += 1
+                iteration += secondIndex == words.count ? 0 : 1
                 delegate?.valueParsed(parser: self, forValue: value, andKey: key)
                 
             }else {
