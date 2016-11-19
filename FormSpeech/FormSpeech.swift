@@ -11,7 +11,7 @@ import Foundation
 typealias Pair = [Field:String]
 protocol Iteratable {}
 
-protocol ParserDelegate {
+protocol FormSpeechDelegate {
     
     func valueParsed(parser: Parser, forValue value:String, andKey key:Field)
     
@@ -19,7 +19,7 @@ protocol ParserDelegate {
 
 class Parser {
     
-    var delegate:ParserDelegate?
+    var delegate:FormSpeechDelegate?
     
     let words = Field.rawValues()
     var iteration = 0
@@ -37,11 +37,8 @@ class Parser {
                 
                 let key = Field(rawValue: first){
                 let value = value.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
-                print("FOUND: " + key.rawValue + ": " + value)
                 iteration += secondIndex == words.count ? 0 : 1
                 delegate?.valueParsed(parser: self, forValue: value, andKey: key)
-                
-            }else {
                 
             }
             
@@ -102,29 +99,29 @@ extension String{
         }
     }
     
-    func parse() -> Pair?{
-        
-        let words = Field.rawValues()
-        var output:Pair = [:]
-        
-        for (index, word) in words.enumerated() {
-            
-            let secondIndex = index + 1
-            let secondWord:String? = secondIndex == words.count ? nil: words[secondIndex]
-            
-            if let value = getSubstring(substring1: word, substring2: secondWord),
-                let key = Field(rawValue: word){
-                
-                output[key] = value.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
-                
-            }else {
-                return nil
-            }
-        }
-        
-        return output.count == 0 ? nil:output
-        
-    }
+//    func parse() -> Pair?{ need for a full sentence parse.
+//        
+//        let words = Field.rawValues()
+//        var output:Pair = [:]
+//        
+//        for (index, word) in words.enumerated() {
+//            
+//            let secondIndex = index + 1
+//            let secondWord:String? = secondIndex == words.count ? nil: words[secondIndex]
+//            
+//            if let value = getSubstring(substring1: word, substring2: secondWord),
+//                let key = Field(rawValue: word){
+//                
+//                output[key] = value.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
+//                
+//            }else {
+//                return nil
+//            }
+//        }
+//        
+//        return output.count == 0 ? nil:output
+//        
+//    }
     
 }
 

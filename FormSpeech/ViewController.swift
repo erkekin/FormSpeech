@@ -18,29 +18,7 @@ enum Field: String, Iteratable{
     
 }
 
-class Form{
-    
-    var name:String!
-    var surname:String!
-    var birthPlace:String!
-    var phoneNumber:String!
-    
-    init?(text:String) {
-        
-        if let output = text.parse(){
-            
-            name = output[Field.name]
-            surname = output[Field.surname]
-            birthPlace = output[Field.birthPlace]
-            phoneNumber = output[Field.phoneNumber]
-            
-        }else  { return nil}
-        
-    }
-    
-}
-
-class ViewController: UIViewController, SFSpeechRecognizerDelegate, ParserDelegate{
+class ViewController: UIViewController, SFSpeechRecognizerDelegate, FormSpeechDelegate{
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var surname: UITextField!
@@ -119,11 +97,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, ParserDelega
                 parser.text = result.bestTranscription.formattedString
                 
                 isFinal = result.isFinal
-                if(isFinal == true){
-                    self.parseSpeech(speechText: result.bestTranscription.formattedString)
-                    
-                    
-                }
+                
             }
             
             if error != nil || isFinal {
@@ -180,17 +154,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate, ParserDelega
             birthPlace.text = ""
             phoneNumber.text = ""
         }
-    }
-    
-    func parseSpeech(speechText:String){
-        
-        guard let form = Form(text: speechText) else {return}
-        
-        name.text = form.name
-        surname.text = form.surname
-        birthPlace.text = form.birthPlace
-        phoneNumber.text = form.phoneNumber
-        
     }
     
     func valueParsed(parser: Parser, forValue value: String, andKey key: Field) {

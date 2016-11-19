@@ -7,7 +7,9 @@ Talk to fill long boring forms in your iOS 10 app!
 ## Usage
 
 - Change language from en-US to your locale in the ViewController.swift
-- Fill Field enum with your custom form data as in the below.
+- Fill Field enum with your custom form data words as in the below.
+- Conform your controller to FormSpeechDelegate
+- implement func valueParsed(parser: Parser, forValue value: String, andKey key: Field) in your ViewController
 - Profit!
 
 ```
