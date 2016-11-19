@@ -2,12 +2,14 @@
 Talk to fill long boring forms in your iOS 10 app!
 
 
-![FormSpeech descriptive image](https://github.com/erkekin/FormSpeech/FormSpeech.png?raw=true)
+![FormSpeech descriptive image](https://github.com/erkekin/FormSpeech/blob/master/FormSpeech.png?raw=true)
 
 ## Usage
+
+- Change language from en-US to your locale in the ViewController.swift
 - Fill Field enum with your custom form data as in the below.
-- Change language from en-US to your locale.
 - Profit!
+
 ```
 enum Field: String, Iteratable{
     case name = "My name is"
@@ -17,5 +19,6 @@ enum Field: String, Iteratable{
 }
 ```
 
+Thanks.
 
 @erkekin
